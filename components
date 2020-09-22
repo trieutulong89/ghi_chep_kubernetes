@@ -1,0 +1,22 @@
+Cụm Kubernetes bao gồm 2 thành phần chính
+
+- The Kubernetes Control Plane: Có nhiệm vụ điều khiển và làm cho toàn bộ cụm hoạt động đúng chức năng.
+    + The etcd distributed persistent storage
+    + The API server
+    + The Scheduler
+    + The Controller Manager
+
+- The (worker) nodes: Có nhiệm vụ chạy các containers trên các nodes.
+    + The Kubelet
+    + The Kubernetes Service Proxy (kube-proxy)
+    + The Container Runtime (Docker, rkt, or others)
+
+Ngoài 2 thành phần chính trên còn có các thành phần bổ sung sau.
+
+- ADD-ON components
+    + The Kubernetes DNS server
+    + The Dashboard
+    + An Ingress controller
+    + Heapster
+    + The Container Network Interface network plugin
+
